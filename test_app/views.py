@@ -83,3 +83,7 @@ def update(request):
 
 def paranormal():
     pass
+
+
+def paranormal22222():
+    pass
