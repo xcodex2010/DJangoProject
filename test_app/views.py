@@ -80,10 +80,3 @@ def update(request):
     product.save()
     return redirect('/test_app/show/')
 
-
-def paranormal():
-    pass
-
-
-def paranormal22222():
-    pass
