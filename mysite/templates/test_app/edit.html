@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+{% block title %}Change goods{% endblock %}
+
+{% block content %}
+
+<h1>Change goods</h1>
+
+<form action="{% url 'update'  %}" method="POST">
+
+    {% csrf_token %}
+
+    <p>{{object.id}}</p>
+    <input type="hidden" value={{object.id}} name="id" /><br>
+    <input type="text" value={{object.name}} name="name" /><br>
+    <textarea name="description">{{object.description}}</textarea><br>
+    <input type="number" value={{object.cost}} name="cost" /><br>
+    <input type="text" value={{object.status}} name="status" /><br>
+    <input type="number" value={{object.amount}} name="amount" /><br>
+
+    <button type="submit">save changes</button>
+
+</form>
+
+{% endblock %}
