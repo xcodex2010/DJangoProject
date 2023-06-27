@@ -79,3 +79,7 @@ def update(request):
     product.amount = request.POST['amount']
     product.save()
     return redirect('/test_app/show/')
+
+
+def paranormal():
+    pass
