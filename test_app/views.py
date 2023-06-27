@@ -80,3 +80,5 @@ def update(request):
     product.save()
     return redirect('/test_app/show/')
 
+def dddd()
+    pass
